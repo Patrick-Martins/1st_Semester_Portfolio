@@ -1,0 +1,55 @@
+/*Start global*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+/*    border-style: solid;*/
+}
+
+html {
+    font-size: 50px;
+    font-family: 'Inconsolata', sans-serif;
+}
+
+
+/*Sections*/
+.main-section{
+    max-width: 100%;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.work-section{
+    width: 100%;
+    margin-top: 200px;
+}
+/*End Sections*/
+
+#main-heading{
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+/*Headings*/
+.main-section h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.main-section h3 {
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+.work-section h2 {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+/*end Headings*/
+
+.greenText{
+    color: #10FF19;
+}
+
+
