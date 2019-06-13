@@ -1,4 +1,4 @@
-/*Start global*/
+/*global*/
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +11,22 @@ html {
     font-family: 'Inconsolata', sans-serif;
 }
 
+.greenText {
+    color: #10FF19;
+}
+
+.blueText{
+    color: #001DFF;
+}
+
+.blackBG {
+    background-color: black;
+    color: white;
+}
+
+/*end global---------------------------*/
+
+/* MAIN Page---------------------------------------------------------------------------------------------------*/
 
 /*Sections*/
 .main-section {
@@ -27,12 +43,12 @@ html {
 
 /*End Sections*/
 
+/*Headings*/
 #main-heading {
     max-width: 1150px;
     margin: 0 auto;
 }
 
-/*Headings*/
 .main-section h1 {
     font-size: 3rem;
     text-align: center;
@@ -42,7 +58,9 @@ html {
     font-size: 1.2rem;
     text-align: right;
     padding: 10px;
-    animation: textMarker 2.5s normal infinite;
+    border-right-style: solid;
+    border-color: black;
+    animation: textMarker 1s alternate infinite;
 }
 
 .main-section h3:hover {
@@ -56,14 +74,7 @@ html {
     text-decoration: none;
 }
 
-/*
-.work-section h2:hover{
-    animation: borderBottom 1s forwards ease-in-out;
-}
-*/
-
-
-.work-section h2:after{
+.work-section h2:after {
     content: '';
     display: block;
     width: 0;
@@ -73,27 +84,88 @@ html {
     transition: .3s;
 }
 
-.work-section h2:hover:after{
-    width:90%;
+.work-section h2:hover:after {
+    width: 90%;
     animation: high .5s .3s ease-in-out forwards;
     text-align: center;
 }
 
-.work-section h2:hover{
+.work-section h2:hover {
     cursor: pointer;
 }
 
-
 /*end Headings*/
 
-.greenText {
-    color: #10FF19;
+
+/* END MAIN Page---------------------------------------------------------------------------------------- */
+
+/* PORTFOLIO Page-----------------------------------------------------------------------------------------------*/
+
+#portfolio-body h1 {
+    display: block;
+    max-width: 920px;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0 auto;
+    color: black;
+    background-color: white;
 }
 
-.blackBG {
-    background-color: black;
-    color: white;
+#portfolio-section {
+    max-width: 1150px;
+    height: auto;
+    padding: 50px;
+    margin: 0 auto;
+    display: grid;
+    grid-auto-columns: 1fr 1fr;
+    grid-template-areas:
+        "theme1 theme2"
+        "theme3 theme4";
+    grid-gap: 50px;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
+
+.theme-container {
+    border: solid;
+    height: 30vh;
+}
+
+.theme-container h2 {
+    font-size: 1rem;
+    font-weight: lighter;
+    text-align: center;
+
+    /*Align Text*/
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#theme1 {
+    grid-area: theme1;
+    border-color: #001DFF;
+}
+
+#theme2 {
+    grid-area: theme2;
+    border-color: #F5FF00;
+}
+
+#theme3 {
+    grid-area: theme3;
+    border-color: #FF0000;
+}
+
+#theme4 {
+    grid-area: theme4;
+    border-color: #00FF0A;
+}
+
+
+/* MAIN Page---------------------------------------------------------------------------------------------------*/
 
 
 
@@ -101,14 +173,15 @@ html {
 
 @keyframes textMarker {
     to {
-        border-right-style: solid;
+        border-color: white;
     }
 }
 
 @keyframes high {
-    from{
+    from {
         font-size: 0;
     }
+
     to {
         height: 1rem;
         content: '1st Semester Portfolio';
@@ -118,5 +191,3 @@ html {
         margin-top: 20px;
     }
 }
-
-
