@@ -11,6 +11,16 @@ html {
     font-family: 'Inconsolata', sans-serif;
 }
 
+.navBar{
+    list-style-type: none;
+    /*removes the dots*/
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #111;
+    width: 100%;
+}
+
 .greenText {
     color: #10FF19;
 }
@@ -18,10 +28,50 @@ html {
 .blueText{
     color: #001DFF;
 }
+.darkblueText{
+    color: #080A43;
+}
+
+.darkyellowText{
+    color: #4A4D0D;
+}
+
+.darkredText{
+    color: #4E1010;
+}
+
+.darkgreenText{
+    color: #043106;
+}
 
 .blackBG {
     background-color: black;
     color: white;
+}
+
+.grayBG {
+    background-color: #E6E6E6;
+    color: black;
+}
+
+.darkblueBG{
+    background-color: #080A43;
+    color: #E6E6E6;
+}
+
+.darkyellowBG{
+    background-color: #4A4D0D;
+    color: #E6E6E6;
+}
+
+.darkredBG{
+    background-color: #4E1010;
+    color: #E6E6E6;
+}
+
+.darkgreenBG{
+    background-color: #043106;
+    color: #E6E6E6;
 }
 
 /*end global---------------------------*/
@@ -101,7 +151,19 @@ html {
 
 /* PORTFOLIO Page-----------------------------------------------------------------------------------------------*/
 
+/*
 #portfolio-body h1 {
+    display: block;
+    max-width: 920px;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0 auto;
+    color: black;
+    background-color: white;
+}
+*/
+
+.heading-header-dark{
     display: block;
     max-width: 920px;
     font-size: 1.4rem;
@@ -165,8 +227,101 @@ html {
 }
 
 
+/* BASIC PAGES GLOBAL--------------------------------------------------------------------------------------------*/
+
+
+.theme-section h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.theme-section{
+    max-width: 100%;
+    height: auto;
+    padding: 50px;
+    margin: 20px auto;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+        "theme-heading"
+        "assignment-container";
+    grid-gap: 0px;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.theme-heading{
+    grid-area: theme-heading;
+    text-align: left;
+    padding-left: 50px;
+    font-size: .8rem;
+}
+
+.assignment-container{
+    grid-area: assignment-container;
+
+    max-width: 100%;
+    height: auto;
+    padding: 50px;
+    padding-top: 10px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+        "assignment-title"
+        "assignment-image"
+        "assignment-text";
+    grid-gap: 0px;
+
+    text-align: left;
+
+}
+
+.assignment-title{
+    grid-area: assignment-title;
+    display:block;
+    margin: auto;
+    font-size: 1rem;
+    width: 60%;
+}
+
+.assignment-image{
+    grid-area: assignment-image;
+    margin: auto;
+    margin-bottom: 30px;
+    width: 60%;
+}
+
+.assignment-text{
+    grid-area: assignment-text;
+    font-size: .6rem;
+
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
 /* MAIN Page---------------------------------------------------------------------------------------------------*/
 
+.heading-header-light{
+    display: block;
+    max-width: 920px;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    background-color: black;
+}
 
 
 /* ANIMATIONS */
