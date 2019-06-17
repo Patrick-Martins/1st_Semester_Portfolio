@@ -285,21 +285,55 @@ html {
     grid-area: assignment-title;
     display:block;
     margin: auto;
-    font-size: 1rem;
+    font-size: .8rem;
     width: 60%;
 }
 
 .assignment-image{
     grid-area: assignment-image;
-    margin: auto;
-    margin-bottom: 30px;
-    width: 60%;
+    width: 100%;
 }
 
 .assignment-text{
     grid-area: assignment-text;
     font-size: .6rem;
+    margin-top: 30px;
 
+}
+
+.image-link{
+    display:block;
+    margin: auto;
+    width: 60%;
+}
+
+.icons{
+    display: flex;
+    margin: auto;
+    width: 60%;
+}
+
+.link{
+    align-items: center;
+    text-align: center;
+
+    width: 60%;
+    margin: auto;
+    margin: 10px;
+
+    border: solid black;
+    padding: 5px;
+}
+
+.icon-image{
+    grid-area: icon-image;
+    width: 80px;
+}
+
+.icon-text{
+    font-size: .6rem;
+    color: black;
+    font-weight: bold;
 }
 
 /* ---------------------------------------------------------------------------------------------------*/
