@@ -5,47 +5,54 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
-    <script src="script.js"></script>
+    <script src="scriptThemes.js"></script>
     <title>Patrick Martins Portfolio</title>
 </head>
 
 <body class="grayBG" id="portfolio-body">
-    <ul class="navBar">
-        <li class="backBT"></li>
-        <li>
-            <h1 class="heading-header-light">> 02:Basic Animation</h1>
-        </li>
-        <li class="burguer-menu"></li>
-    </ul>
+    <header>
+        <nav id="top_nav" class="top-nav">
+            <ul class="nav-list" id="nav-list">
+                <li>
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li>
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+            </ul>
+        </nav>
 
+        <a class="back-arrow"><span>&#8678;</span></a>
+        <h1 class="heading-header-light">> 01:Basic Web</h1>
+
+        <div id="menu-toggler" class="menu-toggler">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+        </div>
+    </header>
 
     <section class="theme-section darkyellowText">
         <h2 class="theme-heading">CSS and Javascript</h2>
         <div class="assignment-container">
             <p class="assignment-title"> 02.01.02 Simple Animation with CSS and JS</p>
-            <div class="assignment-image"></div>
-            <img class="image-link" src="Images/02_01_02_SimpleAnimation/First_Animation.png" width=0>
+            <div class="assignment-image">
+                <img class="image-link" src="Images/02_01_02_SimpleAnimation/First_Animation.png" width=0>
 
-            <div class="icons">
+                <div class="icons">
 
-                    <div class="link">
+                    <a class="link" href="http://pjmelite.dk/KEA/Animation_Project">
                         <svg class="icon-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
                             <title>link_icon</title>
                             <path d="M338.69,321.59S306,234.83,232.17,262.32L124.79,365.4s-46.38,61,30.07,95.34c0,0,42.09,19.76,90.19-45.52,0,0,54.12,17.18,77.31,7.73L246.77,499.4S163.45,569,82.7,483.94,98.16,305.27,98.16,305.27l87.62-85s52.4-49.82,136.58-5.15l61,61.85Z" />
                             <path d="M261.74,279.11s32.64,86.76,106.52,59.27L475.63,235.3s46.39-61-30.06-95.35c0,0-42.09-19.75-90.2,45.53,0,0-54.11-17.18-77.31-7.73l75.6-76.45S437,31.72,517.73,116.76s-15.47,178.67-15.47,178.67l-87.62,85s-52.39,49.83-136.58,5.16l-61-61.85Z" />
                         </svg>
-                        <p class="icon-text"> 02.03.03 Project Pool 1</p>
-                    </div>
-
-                    <div class="link">
-                        <svg class="icon-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
-                            <title>link_icon</title>
-                            <path d="M338.69,321.59S306,234.83,232.17,262.32L124.79,365.4s-46.38,61,30.07,95.34c0,0,42.09,19.76,90.19-45.52,0,0,54.12,17.18,77.31,7.73L246.77,499.4S163.45,569,82.7,483.94,98.16,305.27,98.16,305.27l87.62-85s52.4-49.82,136.58-5.15l61,61.85Z" />
-                            <path d="M261.74,279.11s32.64,86.76,106.52,59.27L475.63,235.3s46.39-61-30.06-95.35c0,0-42.09-19.75-90.2,45.53,0,0-54.11-17.18-77.31-7.73l75.6-76.45S437,31.72,517.73,116.76s-15.47,178.67-15.47,178.67l-87.62,85s-52.39,49.83-136.58,5.16l-61-61.85Z" />
-                        </svg>
-                        <p class="icon-text"> 02.03.04 Project Pool 2</p>
-                    </div>
+                        <p class="icon-text"> 02.01.02 Simple Animation JS and CSS</p>
+                    </a>
                 </div>
+            </div>
 
             <p class="assignment-text"> > This was a fun and interesting short project I developed in one day, because I had the opportunity to choose a character of my will and create different animations for it, based on what i had learned during the week (adding classes to an element using JavaScript).
             </p>
@@ -57,27 +64,25 @@
         <div class="assignment-container">
             <p class="assignment-title"> 02.02.01 Week Submission (part 1, 2 and 3)</p>
             <div class="assignment-image">
-            <img class="image-link" src="Images/02_02_01_WeekSubmission/Storytelling.png" width=0>
+                <img class="image-link" src="Images/02_02_01_WeekSubmission/Storytelling.png" width=0>
 
-            <div class="icons">
+                <div class="icons whiteText">
 
-                    <div class="link">
+                    <a class="link" href="">
                         <svg class="icon-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
-                            <title>link_icon</title>
-                            <path d="M338.69,321.59S306,234.83,232.17,262.32L124.79,365.4s-46.38,61,30.07,95.34c0,0,42.09,19.76,90.19-45.52,0,0,54.12,17.18,77.31,7.73L246.77,499.4S163.45,569,82.7,483.94,98.16,305.27,98.16,305.27l87.62-85s52.4-49.82,136.58-5.15l61,61.85Z" />
-                            <path d="M261.74,279.11s32.64,86.76,106.52,59.27L475.63,235.3s46.39-61-30.06-95.35c0,0-42.09-19.75-90.2,45.53,0,0-54.11-17.18-77.31-7.73l75.6-76.45S437,31.72,517.73,116.76s-15.47,178.67-15.47,178.67l-87.62,85s-52.39,49.83-136.58,5.16l-61-61.85Z" />
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #fff;
+                                    }
+                                </style>
+                            </defs>
+                            <title>link_icon_WHITE</title>
+                            <path class="cls-1" d="M338.69,321.59S306,234.83,232.17,262.32L124.79,365.4s-46.38,61,30.07,95.34c0,0,42.09,19.76,90.19-45.52,0,0,54.12,17.18,77.31,7.73L246.77,499.4S163.45,569,82.7,483.94,98.16,305.27,98.16,305.27l87.62-85s52.4-49.82,136.58-5.15l61,61.85Z" />
+                            <path class="cls-1" d="M261.74,279.11s32.64,86.76,106.52,59.27L475.63,235.3s46.39-61-30.06-95.35c0,0-42.09-19.75-90.2,45.53,0,0-54.11-17.18-77.31-7.73l75.6-76.45S437,31.72,517.73,116.76s-15.47,178.67-15.47,178.67l-87.62,85s-52.39,49.83-136.58,5.16l-61-61.85Z" />
                         </svg>
-                        <p class="icon-text"> 02.03.03 Project Pool 1</p>
-                    </div>
-
-                    <div class="link">
-                        <svg class="icon-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
-                            <title>link_icon</title>
-                            <path d="M338.69,321.59S306,234.83,232.17,262.32L124.79,365.4s-46.38,61,30.07,95.34c0,0,42.09,19.76,90.19-45.52,0,0,54.12,17.18,77.31,7.73L246.77,499.4S163.45,569,82.7,483.94,98.16,305.27,98.16,305.27l87.62-85s52.4-49.82,136.58-5.15l61,61.85Z" />
-                            <path d="M261.74,279.11s32.64,86.76,106.52,59.27L475.63,235.3s46.39-61-30.06-95.35c0,0-42.09-19.75-90.2,45.53,0,0-54.11-17.18-77.31-7.73l75.6-76.45S437,31.72,517.73,116.76s-15.47,178.67-15.47,178.67l-87.62,85s-52.39,49.83-136.58,5.16l-61-61.85Z" />
-                        </svg>
-                        <p class="icon-text"> 02.03.04 Project Pool 2</p>
-                    </div>
+                        <p class="icon-text"> 02.02.01 Week Submission (part 1, 2 and 3)</p>
+                    </a>
                 </div>
             </div>
 
@@ -95,23 +100,23 @@
 
                 <div class="icons">
 
-                    <div class="link">
+                    <a class="link" href="">
                         <svg class="icon-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
                             <title>link_icon</title>
                             <path d="M338.69,321.59S306,234.83,232.17,262.32L124.79,365.4s-46.38,61,30.07,95.34c0,0,42.09,19.76,90.19-45.52,0,0,54.12,17.18,77.31,7.73L246.77,499.4S163.45,569,82.7,483.94,98.16,305.27,98.16,305.27l87.62-85s52.4-49.82,136.58-5.15l61,61.85Z" />
                             <path d="M261.74,279.11s32.64,86.76,106.52,59.27L475.63,235.3s46.39-61-30.06-95.35c0,0-42.09-19.75-90.2,45.53,0,0-54.11-17.18-77.31-7.73l75.6-76.45S437,31.72,517.73,116.76s-15.47,178.67-15.47,178.67l-87.62,85s-52.39,49.83-136.58,5.16l-61-61.85Z" />
                         </svg>
                         <p class="icon-text"> 02.03.03 Project Pool 1</p>
-                    </div>
+                    </a>
 
-                    <div class="link">
+                    <a class="link" href="">
                         <svg class="icon-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
                             <title>link_icon</title>
                             <path d="M338.69,321.59S306,234.83,232.17,262.32L124.79,365.4s-46.38,61,30.07,95.34c0,0,42.09,19.76,90.19-45.52,0,0,54.12,17.18,77.31,7.73L246.77,499.4S163.45,569,82.7,483.94,98.16,305.27,98.16,305.27l87.62-85s52.4-49.82,136.58-5.15l61,61.85Z" />
                             <path d="M261.74,279.11s32.64,86.76,106.52,59.27L475.63,235.3s46.39-61-30.06-95.35c0,0-42.09-19.75-90.2,45.53,0,0-54.11-17.18-77.31-7.73l75.6-76.45S437,31.72,517.73,116.76s-15.47,178.67-15.47,178.67l-87.62,85s-52.39,49.83-136.58,5.16l-61-61.85Z" />
                         </svg>
                         <p class="icon-text"> 02.03.04 Project Pool 2</p>
-                    </div>
+                    </a>
                 </div>
             </div>
             <p class="assignment-text "> > In this theme I worked in pair with two different classmates. In the first project we created a simple calculator that can do one mathematical operation at a time and in the second one we developed a countdown timer that contains different time length options and, if one is selected, it starts counting down from that number.
@@ -126,25 +131,141 @@
             <div class="assignment-image">
                 <img class="image-link" src="Images/02_04_06_Link_To_Final_Interactive_Production/Monty_Python.png" width=0>
 
-                <div class="icons">
+                <div class="icons whiteText">
 
-                    <div class="link">
+                    <a class="link" href="">
                         <svg class="icon-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
-                            <title>link_icon</title>
-                            <path d="M338.69,321.59S306,234.83,232.17,262.32L124.79,365.4s-46.38,61,30.07,95.34c0,0,42.09,19.76,90.19-45.52,0,0,54.12,17.18,77.31,7.73L246.77,499.4S163.45,569,82.7,483.94,98.16,305.27,98.16,305.27l87.62-85s52.4-49.82,136.58-5.15l61,61.85Z" />
-                            <path d="M261.74,279.11s32.64,86.76,106.52,59.27L475.63,235.3s46.39-61-30.06-95.35c0,0-42.09-19.75-90.2,45.53,0,0-54.11-17.18-77.31-7.73l75.6-76.45S437,31.72,517.73,116.76s-15.47,178.67-15.47,178.67l-87.62,85s-52.39,49.83-136.58,5.16l-61-61.85Z" />
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #fff;
+                                    }
+                                </style>
+                            </defs>
+                            <title>link_icon_WHITE</title>
+                            <path class="cls-1" d="M338.69,321.59S306,234.83,232.17,262.32L124.79,365.4s-46.38,61,30.07,95.34c0,0,42.09,19.76,90.19-45.52,0,0,54.12,17.18,77.31,7.73L246.77,499.4S163.45,569,82.7,483.94,98.16,305.27,98.16,305.27l87.62-85s52.4-49.82,136.58-5.15l61,61.85Z" />
+                            <path class="cls-1" d="M261.74,279.11s32.64,86.76,106.52,59.27L475.63,235.3s46.39-61-30.06-95.35c0,0-42.09-19.75-90.2,45.53,0,0-54.11-17.18-77.31-7.73l75.6-76.45S437,31.72,517.73,116.76s-15.47,178.67-15.47,178.67l-87.62,85s-52.39,49.83-136.58,5.16l-61-61.85Z" />
                         </svg>
-                        <p class="icon-text"> 02.03.03 Project Pool 1</p>
-                    </div>
+                        <p class="icon-text"> 02.04.01 Collaboration Agreement Group4</p>
+                    </a>
 
-                    <div class="link">
+                    <a class="link" href="">
                         <svg class="icon-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
-                            <title>link_icon</title>
-                            <path d="M338.69,321.59S306,234.83,232.17,262.32L124.79,365.4s-46.38,61,30.07,95.34c0,0,42.09,19.76,90.19-45.52,0,0,54.12,17.18,77.31,7.73L246.77,499.4S163.45,569,82.7,483.94,98.16,305.27,98.16,305.27l87.62-85s52.4-49.82,136.58-5.15l61,61.85Z" />
-                            <path d="M261.74,279.11s32.64,86.76,106.52,59.27L475.63,235.3s46.39-61-30.06-95.35c0,0-42.09-19.75-90.2,45.53,0,0-54.11-17.18-77.31-7.73l75.6-76.45S437,31.72,517.73,116.76s-15.47,178.67-15.47,178.67l-87.62,85s-52.39,49.83-136.58,5.16l-61-61.85Z" />
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #fff;
+                                    }
+                                </style>
+                            </defs>
+                            <title>link_icon_WHITE</title>
+                            <path class="cls-1" d="M338.69,321.59S306,234.83,232.17,262.32L124.79,365.4s-46.38,61,30.07,95.34c0,0,42.09,19.76,90.19-45.52,0,0,54.12,17.18,77.31,7.73L246.77,499.4S163.45,569,82.7,483.94,98.16,305.27,98.16,305.27l87.62-85s52.4-49.82,136.58-5.15l61,61.85Z" />
+                            <path class="cls-1" d="M261.74,279.11s32.64,86.76,106.52,59.27L475.63,235.3s46.39-61-30.06-95.35c0,0-42.09-19.75-90.2,45.53,0,0-54.11-17.18-77.31-7.73l75.6-76.45S437,31.72,517.73,116.76s-15.47,178.67-15.47,178.67l-87.62,85s-52.39,49.83-136.58,5.16l-61-61.85Z" />
                         </svg>
-                        <p class="icon-text"> 02.03.04 Project Pool 2</p>
-                    </div>
+                        <p class="icon-text"> 02_04_02 moodboard, personas collage and style tile</p>
+                    </a>
+
+                </div>
+
+
+
+
+
+
+                <div class="icons whiteText">
+
+                    <a class="link" href="">
+                        <svg class="icon-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #fff;
+                                    }
+                                </style>
+                            </defs>
+                            <title>link_icon_WHITE</title>
+                            <path class="cls-1" d="M338.69,321.59S306,234.83,232.17,262.32L124.79,365.4s-46.38,61,30.07,95.34c0,0,42.09,19.76,90.19-45.52,0,0,54.12,17.18,77.31,7.73L246.77,499.4S163.45,569,82.7,483.94,98.16,305.27,98.16,305.27l87.62-85s52.4-49.82,136.58-5.15l61,61.85Z" />
+                            <path class="cls-1" d="M261.74,279.11s32.64,86.76,106.52,59.27L475.63,235.3s46.39-61-30.06-95.35c0,0-42.09-19.75-90.2,45.53,0,0-54.11-17.18-77.31-7.73l75.6-76.45S437,31.72,517.73,116.76s-15.47,178.67-15.47,178.67l-87.62,85s-52.39,49.83-136.58,5.16l-61-61.85Z" />
+                        </svg>
+                        <p class="icon-text"> 02.04.03 Storyboard</p>
+                    </a>
+
+                    <a class="link" href="">
+                        <svg class="icon-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #fff;
+                                    }
+                                </style>
+                            </defs>
+                            <title>link_icon_WHITE</title>
+                            <path class="cls-1" d="M338.69,321.59S306,234.83,232.17,262.32L124.79,365.4s-46.38,61,30.07,95.34c0,0,42.09,19.76,90.19-45.52,0,0,54.12,17.18,77.31,7.73L246.77,499.4S163.45,569,82.7,483.94,98.16,305.27,98.16,305.27l87.62-85s52.4-49.82,136.58-5.15l61,61.85Z" />
+                            <path class="cls-1" d="M261.74,279.11s32.64,86.76,106.52,59.27L475.63,235.3s46.39-61-30.06-95.35c0,0-42.09-19.75-90.2,45.53,0,0-54.11-17.18-77.31-7.73l75.6-76.45S437,31.72,517.73,116.76s-15.47,178.67-15.47,178.67l-87.62,85s-52.39,49.83-136.58,5.16l-61-61.85Z" />
+                        </svg>
+                        <p class="icon-text"> 02.04.04_Animated GIF</p>
+                    </a>
+
+                </div>
+
+
+
+
+                <div class="icons whiteText">
+
+                    <a class="link" href="">
+                        <svg class="icon-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #fff;
+                                    }
+                                </style>
+                            </defs>
+                            <title>link_icon_WHITE</title>
+                            <path class="cls-1" d="M338.69,321.59S306,234.83,232.17,262.32L124.79,365.4s-46.38,61,30.07,95.34c0,0,42.09,19.76,90.19-45.52,0,0,54.12,17.18,77.31,7.73L246.77,499.4S163.45,569,82.7,483.94,98.16,305.27,98.16,305.27l87.62-85s52.4-49.82,136.58-5.15l61,61.85Z" />
+                            <path class="cls-1" d="M261.74,279.11s32.64,86.76,106.52,59.27L475.63,235.3s46.39-61-30.06-95.35c0,0-42.09-19.75-90.2,45.53,0,0-54.11-17.18-77.31-7.73l75.6-76.45S437,31.72,517.73,116.76s-15.47,178.67-15.47,178.67l-87.62,85s-52.39,49.83-136.58,5.16l-61-61.85Z" />
+                        </svg>
+                        <p class="icon-text"> 02.04.05 Summary of Peer Review Group4 </p>
+                    </a>
+
+                    <a class="link" href="">
+                        <svg class="icon-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #fff;
+                                    }
+                                </style>
+                            </defs>
+                            <title>link_icon_WHITE</title>
+                            <path class="cls-1" d="M338.69,321.59S306,234.83,232.17,262.32L124.79,365.4s-46.38,61,30.07,95.34c0,0,42.09,19.76,90.19-45.52,0,0,54.12,17.18,77.31,7.73L246.77,499.4S163.45,569,82.7,483.94,98.16,305.27,98.16,305.27l87.62-85s52.4-49.82,136.58-5.15l61,61.85Z" />
+                            <path class="cls-1" d="M261.74,279.11s32.64,86.76,106.52,59.27L475.63,235.3s46.39-61-30.06-95.35c0,0-42.09-19.75-90.2,45.53,0,0-54.11-17.18-77.31-7.73l75.6-76.45S437,31.72,517.73,116.76s-15.47,178.67-15.47,178.67l-87.62,85s-52.39,49.83-136.58,5.16l-61-61.85Z" />
+                        </svg>
+                        <p class="icon-text"> 02_04_06 Link to Final Interactive Production</p>
+                    </a>
+
+                </div>
+
+
+
+                <div class="icons whiteText">
+
+                    <a class="link" href="">
+                        <svg class="icon-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #fff;
+                                    }
+                                </style>
+                            </defs>
+                            <title>link_icon_WHITE</title>
+                            <path class="cls-1" d="M338.69,321.59S306,234.83,232.17,262.32L124.79,365.4s-46.38,61,30.07,95.34c0,0,42.09,19.76,90.19-45.52,0,0,54.12,17.18,77.31,7.73L246.77,499.4S163.45,569,82.7,483.94,98.16,305.27,98.16,305.27l87.62-85s52.4-49.82,136.58-5.15l61,61.85Z" />
+                            <path class="cls-1" d="M261.74,279.11s32.64,86.76,106.52,59.27L475.63,235.3s46.39-61-30.06-95.35c0,0-42.09-19.75-90.2,45.53,0,0-54.11-17.18-77.31-7.73l75.6-76.45S437,31.72,517.73,116.76s-15.47,178.67-15.47,178.67l-87.62,85s-52.39,49.83-136.58,5.16l-61-61.85Z" />
+                        </svg>
+                        <p class="icon-text"> 02.04.07 Presentation</p>
+                    </a>
                 </div>
             </div>
 

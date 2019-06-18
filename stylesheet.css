@@ -1,4 +1,6 @@
 /*global*/
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,41 +8,45 @@
     /*    border-style: solid;*/
 }
 
+body {
+    padding: 0;
+    padding-top: 10vh;
+}
+
 html {
     font-size: 50px;
     font-family: 'Inconsolata', sans-serif;
 }
 
-.navBar{
-    list-style-type: none;
-    /*removes the dots*/
-    margin: 0;
-    padding: 10px;
-    overflow: hidden;
-    background-color: #111;
-    width: 100%;
+.whiteText p {
+    color: white;
+}
+
+.whiteText .link {
+    border-color: white;
 }
 
 .greenText {
     color: #10FF19;
 }
 
-.blueText{
+.blueText {
     color: #001DFF;
 }
-.darkblueText{
+
+.darkblueText {
     color: #080A43;
 }
 
-.darkyellowText{
+.darkyellowText {
     color: #4A4D0D;
 }
 
-.darkredText{
+.darkredText {
     color: #4E1010;
 }
 
-.darkgreenText{
+.darkgreenText {
     color: #043106;
 }
 
@@ -54,27 +60,139 @@ html {
     color: black;
 }
 
-.darkblueBG{
+.darkblueBG {
     background-color: #080A43;
     color: #E6E6E6;
 }
 
-.darkyellowBG{
+.darkyellowBG {
     background-color: #4A4D0D;
     color: #E6E6E6;
 }
 
-.darkredBG{
+.darkredBG {
     background-color: #4E1010;
     color: #E6E6E6;
 }
 
-.darkgreenBG{
+.darkgreenBG {
     background-color: #043106;
     color: #E6E6E6;
 }
 
 /*end global---------------------------*/
+
+/* HEADER---------------------------------------------------------------------------------------------------*/
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+}
+
+.top-nav {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    top: -100vh;
+    /* hide the nav */
+    z-index: 50;
+    background-color: black;
+    transition: all 300ms cubic-bezier(1, 0, 0, 1);
+    padding: 30px;
+}
+
+.nav-list {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    margin: 2rem;
+    list-style: none;
+}
+
+.nav-link {
+    height: 100%;
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+
+    transition: 200ms cubic-bezier(1, 0, 1, 1);
+
+}
+
+.nav-link:hover {
+    font-size: 1.5rem;
+}
+
+.top-nav.open {
+    top: 0;
+}
+
+.menu-toggler {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 1500;
+    transition: transform 650ms ease-out;
+    margin: auto;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.back-arrow {
+    color: white;
+    width: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+/*hamburger menu--------------------------------------*/
+
+.menu-toggler {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1 {
+    margin-bottom: 17px;
+}
+
+.bar1,
+.bar2 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+
+/* Rotate first bar */
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 5px);
+    transform: rotate(-45deg) translate(-9px, 5px);
+}
+
+
+/* Rotate last bar */
+.open .bar2 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
 
 /* MAIN Page---------------------------------------------------------------------------------------------------*/
 
@@ -163,7 +281,7 @@ html {
 }
 */
 
-.heading-header-dark{
+.heading-header-dark {
     display: block;
     max-width: 920px;
     font-size: 1.4rem;
@@ -230,13 +348,13 @@ html {
 /* BASIC PAGES GLOBAL--------------------------------------------------------------------------------------------*/
 
 
-.theme-section h2{
+.theme-section h2 {
     text-align: center;
     text-transform: uppercase;
     font-size: 1.2rem;
 }
 
-.theme-section{
+.theme-section {
     max-width: 100%;
     height: auto;
     padding: 50px;
@@ -253,14 +371,14 @@ html {
     text-align: center;
 }
 
-.theme-heading{
+.theme-heading {
     grid-area: theme-heading;
     text-align: left;
     padding-left: 50px;
     font-size: .8rem;
 }
 
-.assignment-container{
+.assignment-container {
     grid-area: assignment-container;
 
     max-width: 100%;
@@ -281,39 +399,40 @@ html {
 
 }
 
-.assignment-title{
+.assignment-title {
     grid-area: assignment-title;
-    display:block;
+    display: block;
     margin: auto;
     font-size: .8rem;
     width: 60%;
 }
 
-.assignment-image{
+.assignment-image {
     grid-area: assignment-image;
     width: 100%;
 }
 
-.assignment-text{
+.assignment-text {
     grid-area: assignment-text;
     font-size: .6rem;
     margin-top: 30px;
 
 }
 
-.image-link{
-    display:block;
+.image-link {
+    display: block;
     margin: auto;
     width: 60%;
 }
 
-.icons{
+.icons {
     display: flex;
     margin: auto;
     width: 60%;
 }
 
-.link{
+.link {
+    display: block;
     align-items: center;
     text-align: center;
 
@@ -323,14 +442,15 @@ html {
 
     border: solid black;
     padding: 5px;
+    text-decoration: none;
 }
 
-.icon-image{
+.icon-image {
     grid-area: icon-image;
     width: 80px;
 }
 
-.icon-text{
+.icon-text {
     font-size: .6rem;
     color: black;
     font-weight: bold;
@@ -347,10 +467,10 @@ html {
 
 /* MAIN Page---------------------------------------------------------------------------------------------------*/
 
-.heading-header-light{
+.heading-header-light {
     display: block;
     max-width: 920px;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     text-align: center;
     margin: 0 auto;
     color: white;
