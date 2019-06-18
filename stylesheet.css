@@ -160,6 +160,10 @@ li {
     margin-right: 1rem;
 }
 
+.back-arrow:hover{
+    cursor: pointer;
+}
+
 
 /*hamburger menu--------------------------------------*/
 
@@ -313,6 +317,10 @@ li {
     height: 30vh;
 }
 
+.theme-container:hover {
+    cursor: pointer;
+}
+
 .theme-container h2 {
     font-size: 1rem;
     font-weight: lighter;
@@ -436,13 +444,18 @@ li {
     align-items: center;
     text-align: center;
 
-    width: 60%;
+    width: 100%;
     margin: auto;
     margin: 10px;
 
     border: solid black;
     padding: 5px;
     text-decoration: none;
+}
+
+.link:hover{
+    opacity: .7;
+    cursor: pointer;
 }
 
 .icon-image {
