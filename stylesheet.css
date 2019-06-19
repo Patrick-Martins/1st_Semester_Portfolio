@@ -593,3 +593,55 @@ li {
         transform: scale(1);
     }
 }
+
+
+
+
+
+/* RESPONSIVENESS -----------------------------------------------------------------------------------*/
+
+@media all and (max-width:1200px) {
+    html{
+        font-size: 40px;
+    }
+}
+
+
+@media all and (max-width:900px) {
+    html{
+        font-size: 30px;
+    }
+
+    .assignment-title {
+    width: 100%;
+}
+
+    .assignment-container{
+        padding: 0;
+    }
+
+    .image-link {
+    width: 100%;
+}
+
+.icons {
+    width: 100%;
+}
+
+
+
+    /*nav Bar*/
+    li {
+    margin: 1rem;
+    list-style: none;
+}
+
+}
+
+@media all and (max-width:600px) {
+    html{
+        font-size: 25px;
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------------*/
