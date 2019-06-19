@@ -60,6 +60,10 @@ html {
     color: black;
 }
 
+.black{
+    color: black;
+}
+
 .darkblueBG {
     background-color: #080A43;
     color: #E6E6E6;
@@ -80,6 +84,12 @@ html {
     color: #E6E6E6;
 }
 
+
+
+.home{
+    transform: rotate(90deg);
+    transition: .5s;
+}
 /*end global---------------------------*/
 
 /* HEADER---------------------------------------------------------------------------------------------------*/
@@ -245,6 +255,7 @@ li {
     font-size: 1.6rem;
     text-align: center;
     text-decoration: none;
+    animation: grow 2s infinite;
 }
 
 .work-section h2:after {
@@ -265,6 +276,7 @@ li {
 
 .work-section h2:hover {
     cursor: pointer;
+    animation-play-state: paused;
 }
 
 /*end Headings*/
@@ -272,6 +284,41 @@ li {
 
 /* END MAIN Page---------------------------------------------------------------------------------------- */
 
+/*About Page-------------------------------------------------------------------------------------------------*/
+
+#about-intro, .intro-main{
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+#about-intro p{
+    display: block;
+    font-size: 1rem;
+    width: 90%;
+    margin: auto;
+}
+
+
+.intro-main h2{
+    display: block;
+    max-width: 920px;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.intro-main p{
+    display: block;
+    width: 80%;
+    margin: auto;
+    font-size: .7rem;
+}
+
+/* END About Page---------------------------------------------------------------------------------------------------*/
 /* PORTFOLIO Page-----------------------------------------------------------------------------------------------*/
 
 /*
@@ -316,6 +363,7 @@ li {
 .theme-container {
     border: solid;
     height: 30vh;
+    transition: 200ms ease-in-out;
 }
 
 .theme-container:hover {
@@ -338,9 +386,17 @@ li {
     border-color: #001DFF;
 }
 
+#theme1:hover {
+    box-shadow: 0px 10px 10px 5px #001DFF;
+}
+
 #theme2 {
     grid-area: theme2;
     border-color: #F5FF00;
+}
+
+#theme2:hover {
+    box-shadow: 0px 10px 10px 5px #F5FF00;
 }
 
 #theme3 {
@@ -348,9 +404,17 @@ li {
     border-color: #FF0000;
 }
 
+#theme3:hover {
+    box-shadow: 0px 10px 10px 5px #FF0000;
+}
+
 #theme4 {
     grid-area: theme4;
     border-color: #00FF0A;
+}
+
+#theme4:hover {
+    box-shadow: 0px 10px 10px 5px #00FF0A;
 }
 
 
@@ -512,5 +576,20 @@ li {
         background-color: white;
         color: black;
         margin-top: 20px;
+    }
+}
+
+
+@keyframes grow {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+       transform: scale(1.2);
+    }
+
+    100%{
+        transform: scale(1);
     }
 }
